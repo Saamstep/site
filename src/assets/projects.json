@@ -1,0 +1,94 @@
+{
+  "projects": [
+    {
+      "title": "Project Alpha",
+      "shortDesc": "An innovative project aimed at revolutionizing the tech industry.",
+      "buttonText": "Learn More",
+      "buttonLink": "https://example.com/project-alpha",
+      "tags": ["Tech", "Innovation"],
+      "headerImg": "https://via.placeholder.com/100x50?text=Project+Alpha",
+      "goLink": "https://google.com",
+      "goText": "Visit Project"
+    },
+    {
+      "title": "Project Beta",
+      "shortDesc": "A cutting-edge solution for modern business challenges.",
+      "buttonText": "Explore",
+      "buttonLink": "https://example.com/project-beta",
+      "tags": ["Business", "Solutions"],
+      "headerImg": "https://via.placeholder.com/100x50?text=Project+Beta"
+    },
+    {
+      "title": "Project Gamma",
+      "shortDesc": "A groundbreaking approach to environmental sustainability.",
+      "buttonText": "Read More",
+      "buttonLink": "https://example.com/project-gamma",
+      "tags": ["Environment", "Sustainability"],
+      "headerImg": "https://via.placeholder.com/100x50?text=Project+Gamma"
+    },
+    {
+      "title": "Project Delta",
+      "shortDesc": "An exciting new venture in the world of digital media.",
+      "buttonText": "See Details",
+      "buttonLink": "https://example.com/project-delta",
+      "tags": ["Media", "Digital"],
+      "headerImg": "https://via.placeholder.com/100x50?text=Project+Delta"
+    },
+    {
+      "title": "Project Epsilon",
+      "shortDesc": "A transformative initiative for education and learning.",
+      "buttonText": "Get Started",
+      "buttonLink": "https://example.com/project-epsilon",
+      "tags": ["Education", "Learning"],
+      "headerImg": "https://via.placeholder.com/100x50?text=Project+Epsilon"
+    },
+    {
+      "title": "Project Zeta",
+      "shortDesc": "Innovative solutions for the healthcare industry.",
+      "buttonText": "Discover More",
+      "buttonLink": "https://example.com/project-zeta",
+      "tags": ["Healthcare", "Innovation"],
+      "headerImg": "https://via.placeholder.com/100x50?text=Project+Zeta"
+    },
+    {
+      "title": "Project Eta",
+      "shortDesc": "A new approach to remote work and productivity.",
+      "buttonText": "Learn More",
+      "buttonLink": "https://example.com/project-eta",
+      "tags": ["Remote Work", "Productivity"],
+      "headerImg": "https://via.placeholder.com/100x50?text=Project+Eta"
+    },
+    {
+      "title": "Project Theta",
+      "shortDesc": "Advancements in AI and machine learning technologies.",
+      "buttonText": "Explore Now",
+      "buttonLink": "https://example.com/project-theta",
+      "tags": ["AI", "Machine Learning"],
+      "headerImg": "https://via.placeholder.com/100x50?text=Project+Theta"
+    },
+    {
+      "title": "Project Iota",
+      "shortDesc": "A novel approach to smart cities and urban development.",
+      "buttonText": "Find Out More",
+      "buttonLink": "https://example.com/project-iota",
+      "tags": ["Smart Cities", "Urban Development"],
+      "headerImg": "https://via.placeholder.com/100x50?text=Project+Iota"
+    },
+    {
+      "title": "Project Kappa",
+      "shortDesc": "Cutting-edge technology for space exploration.",
+      "buttonText": "See Project",
+      "buttonLink": "https://example.com/project-kappa",
+      "tags": ["Space", "Technology"],
+      "headerImg": "https://via.placeholder.com/100x50?text=Project+Kappa"
+    },
+    {
+      "title": "Project Lambda",
+      "shortDesc": "An exciting development in blockchain and cryptocurrency.",
+      "buttonText": "Get Details",
+      "buttonLink": "https://example.com/project-lambda",
+      "tags": ["Blockchain", "Cryptocurrency"],
+      "headerImg": "https://via.placeholder.com/100x50?text=Project+Lambda"
+    }
+  ]
+}
