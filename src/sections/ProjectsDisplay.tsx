@@ -9,16 +9,6 @@ function ProjectDisplay() {
   const numRows = Math.ceil(projectData.projects.length / 3);
   // const [getSearchFilters, setSearchFilters] = useState([]);
 
-  function cardImage(pathStr: string) {
-    if (pathStr.startsWith("file:")) {
-      const substr = `${process.env.PUBLIC_URL}/images/${pathStr.slice(5)}`;
-      console.log(substr);
-      return substr;
-    } else {
-      return pathStr;
-    }
-  }
-
   function FilterProjects() {
     return Array.from({ length: numRows }).map((_, rowIndex) => (
       <Row key={rowIndex} className="mb-4">

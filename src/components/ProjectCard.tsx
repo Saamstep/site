@@ -15,7 +15,7 @@ interface Props {
   tags?: string[];
 }
 
-function ProjectCard({ title, children, image, buttonText, buttonLink, goLink, goText, tags }: Props) {
+function ProjectCard({ title, children, buttonText, buttonLink, goLink, goText, tags }: Props) {
   return (
     <Card className="mb-2">
       <Card.Img variant="top" src="/images/100x50.png" />
