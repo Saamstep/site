@@ -1,25 +1,63 @@
 import Container from "react-bootstrap/Container";
 import Nav from "react-bootstrap/Nav";
 import Navbar from "react-bootstrap/Navbar";
-import NavDropdown from "react-bootstrap/NavDropdown";
+import logo from "../assets/samstep-light-t.svg";
+import { useState } from "react";
 
 function NavBarMenu() {
+  const [ActiveItem, setActiveMenuItem] = useState(0);
+
+  function smoothScroll(anchorName: string) {
+    const anchor = document.querySelector(anchorName);
+    if (anchor !== null) anchor.scrollIntoView({ behavior: "smooth", block: "start" });
+  }
+
   return (
-    <Navbar expand="lg" className="bg-body-tertiary">
+    <Navbar expand="lg" className="bg-body-tertiary" fixed="top">
       <Container>
-        <Navbar.Brand href="#home">React-Bootstrap</Navbar.Brand>
+        <Navbar.Brand>
+          <img
+            src={logo}
+            width="35"
+            className="d-inline-block align-top"
+            alt="Samstep 2022 Logo"
+            onClick={() => {
+              // setActiveMenuItem(0);
+              return smoothScroll("#home");
+            }}
+            style={{ cursor: "pointer" }}
+          />
+        </Navbar.Brand>
         <Navbar.Toggle aria-controls="basic-navbar-nav" />
         <Navbar.Collapse id="basic-navbar-nav">
           <Nav className="me-auto">
-            <Nav.Link href="#home">Home</Nav.Link>
-            <Nav.Link href="#link">Link</Nav.Link>
-            <NavDropdown title="Dropdown" id="basic-nav-dropdown">
-              <NavDropdown.Item href="#action/3.1">Action</NavDropdown.Item>
-              <NavDropdown.Item href="#action/3.2">Another action</NavDropdown.Item>
-              <NavDropdown.Item href="#action/3.3">Something</NavDropdown.Item>
-              <NavDropdown.Divider />
-              <NavDropdown.Item href="#action/3.4">Separated link</NavDropdown.Item>
-            </NavDropdown>
+            <Nav.Link
+              className={(ActiveItem === 1 && "active") || ""}
+              onClick={() => {
+                // setActiveMenuItem(1);
+                return smoothScroll("#about");
+              }}
+            >
+              About
+            </Nav.Link>
+            <Nav.Link
+              className={(ActiveItem === 2 && "active") || ""}
+              onClick={() => {
+                // setActiveMenuItem(2);
+                return smoothScroll("#projects");
+              }}
+            >
+              Projects
+            </Nav.Link>
+            <Nav.Link
+              className={(ActiveItem === 3 && "active") || ""}
+              onClick={() => {
+                // setActiveMenuItem(3);
+                return smoothScroll("#contact");
+              }}
+            >
+              Contact
+            </Nav.Link>
           </Nav>
         </Navbar.Collapse>
       </Container>

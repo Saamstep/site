@@ -3,6 +3,7 @@ import Row from "react-bootstrap/Row";
 import NavBarMenu from "./components/NavBarMenu";
 import ProjectDisplay from "./sections/ProjectsDisplay";
 import Header from "./sections/Header";
+import About from "./sections/About";
 
 function App() {
   return (
@@ -13,6 +14,8 @@ function App() {
           <Header />
         </Row>
       </Container>
+
+      <About />
 
       <ProjectDisplay />
     </>

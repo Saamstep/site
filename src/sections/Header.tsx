@@ -7,6 +7,7 @@ function Header() {
   return (
     <>
       <Container
+        id="home"
         className={centerItems}
         fluid
         style={{
@@ -20,7 +21,9 @@ function Header() {
       >
         <Stack className={centerItems}>
           <h1 className="">👋 Hey There!</h1>
-          <h4 className="my-4">My name is Sam</h4>
+          <p className="me-2 text-center">
+            <strong>My name is Sam</strong>, a college student studying Electrical and Computer Engineering passionate about embedded systems, robotics, and video engineering.{" "}
+          </p>
         </Stack>
       </Container>
     </>
