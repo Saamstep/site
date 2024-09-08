@@ -2,10 +2,10 @@ import Container from "react-bootstrap/Container";
 import Nav from "react-bootstrap/Nav";
 import Navbar from "react-bootstrap/Navbar";
 import logo from "../assets/samstep-light-t.svg";
-import { useState } from "react";
+// import { useState } from "react";
 
 function NavBarMenu() {
-  const [ActiveItem, setActiveMenuItem] = useState(0);
+  // const [ActiveItem, setActiveMenuItem] = useState(0);
 
   function smoothScroll(anchorName: string) {
     const anchor = document.querySelector(anchorName);
@@ -19,7 +19,7 @@ function NavBarMenu() {
           <img
             src={logo}
             width="35"
-            className="d-inline-block align-top"
+            // className="d-inline-block align-top"
             alt="Samstep 2022 Logo"
             onClick={() => {
               // setActiveMenuItem(0);
@@ -32,7 +32,7 @@ function NavBarMenu() {
         <Navbar.Collapse id="basic-navbar-nav">
           <Nav className="me-auto">
             <Nav.Link
-              className={(ActiveItem === 1 && "active") || ""}
+              // className={(ActiveItem === 1 && "active") || ""}
               onClick={() => {
                 // setActiveMenuItem(1);
                 return smoothScroll("#about");
@@ -41,7 +41,7 @@ function NavBarMenu() {
               About
             </Nav.Link>
             <Nav.Link
-              className={(ActiveItem === 2 && "active") || ""}
+              // className={(ActiveItem === 2 && "active") || ""}
               onClick={() => {
                 // setActiveMenuItem(2);
                 return smoothScroll("#projects");
@@ -50,7 +50,7 @@ function NavBarMenu() {
               Projects
             </Nav.Link>
             <Nav.Link
-              className={(ActiveItem === 3 && "active") || ""}
+              // className={(ActiveItem === 3 && "active") || ""}
               onClick={() => {
                 // setActiveMenuItem(3);
                 return smoothScroll("#contact");

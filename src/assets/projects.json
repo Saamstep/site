@@ -6,7 +6,7 @@
       "buttonText": "Learn More",
       "buttonLink": "https://example.com/project-alpha",
       "tags": ["Tech", "Innovation"],
-      "headerImg": "https://via.placeholder.com/100x50?text=Project+Alpha",
+      "headerImg": "/100x50.png",
       "goLink": "https://google.com",
       "goText": "Visit Project"
     },
@@ -16,7 +16,7 @@
       "buttonText": "Explore",
       "buttonLink": "https://example.com/project-beta",
       "tags": ["Business", "Solutions"],
-      "headerImg": "https://via.placeholder.com/100x50?text=Project+Beta"
+      "headerImg": "../assets/100x50.png"
     },
     {
       "title": "Project Gamma",
