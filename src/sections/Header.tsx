@@ -3,7 +3,7 @@ import bmdImage from "../assets/bmd.jpg";
 import Stack from "react-bootstrap/Stack";
 
 function Header() {
-  const centerItems = "d-flex align-items-center justify-content-center";
+  const centerItems = "d-flex align-items-center justify-content-center text-center";
   return (
     <>
       <Container
@@ -21,9 +21,8 @@ function Header() {
       >
         <Stack className={centerItems}>
           <h1 className="">👋 Hey There!</h1>
-          <p className="me-2 text-center">
-            <strong>My name is Sam</strong>, a college student studying Electrical and Computer Engineering passionate about embedded systems, robotics, and video engineering.{" "}
-          </p>
+          <hr></hr>
+          <p className="me-2 text-center">I'm Sam, a college student studying Electrical and Computer Engineering with a focus on embedded systems, robotics, and video engineering.</p>
         </Stack>
       </Container>
     </>
