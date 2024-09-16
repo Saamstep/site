@@ -1,0 +1,15 @@
+@import './colors.scss';
+
+$primary: $sam-blue;
+$secondary: $grey;
+$dark: $bg-dark;
+
+@import "../../node_modules/bootstrap/scss/bootstrap";
+
+[data-bs-theme="dark"] {
+    --bs-body-color: #{($white)};
+    --bs-body-color-rgb: #{to-rgb($white)};
+    --bs-body-bg: #{($bg-dark)};
+    --bs-body-bg-rgb: #{to-rgb($bg-dark)};
+    --bs-primary-rgb: #{to-rgb($sam-blue)};
+}

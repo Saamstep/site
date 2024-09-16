@@ -27,7 +27,7 @@ function ProjectCard({ title, children, buttonText, buttonLink, goLink, goText, 
               return (
                 // <a onClick={FilterProjects(t.toLowerCase().replace(/ /g, "_"))}>
                 <Badge bg="secondary" className="me-1">
-                  {"#" + t}
+                  {t}
                 </Badge>
                 // </a>
               );

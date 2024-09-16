@@ -13,7 +13,7 @@ function NavBarMenu() {
   }
 
   return (
-    <Navbar expand="lg" className="bg-body-tertiary" fixed="top">
+    <Navbar expand="lg" bg="dark" fixed="top">
       <Container>
         <Navbar.Brand>
           <img
