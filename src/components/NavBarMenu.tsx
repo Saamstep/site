@@ -49,7 +49,7 @@ function NavBarMenu() {
             >
               Projects
             </Nav.Link>
-            <Nav.Link
+            {/* <Nav.Link
               // className={(ActiveItem === 3 && "active") || ""}
               onClick={() => {
                 // setActiveMenuItem(3);
@@ -57,7 +57,7 @@ function NavBarMenu() {
               }}
             >
               Contact
-            </Nav.Link>
+            </Nav.Link> */}
           </Nav>
         </Navbar.Collapse>
       </Container>

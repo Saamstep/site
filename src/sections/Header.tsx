@@ -11,18 +11,20 @@ function Header() {
         className={centerItems}
         fluid
         style={{
-          minHeight: "400px",
-          maxHeight: "500px",
-          backgroundImage: `url(${bmdImage}), linear-gradient(#212529, #2c2c2c, #212529)`,
+          height: "600px",
+          backgroundColor: 'rgba(43, 115, 139, .8)',
+          backgroundImage: `url(${bmdImage})`,
           backgroundRepeat: "no-repeat",
           backgroundSize: "cover",
-          backgroundBlendMode: "overlay",
+          backgroundPosition: "center",
+          backgroundAttachment: "fixed",
+          backgroundBlendMode: "multiply",
         }}
       >
         <Stack className={centerItems}>
-          <h1 className="">👋 Hey There!</h1>
+          <h1 className="text-emphasis">👋 Hey There!</h1>
           <hr></hr>
-          <p className="me-2 text-center">I'm Sam, a college student studying Electrical and Computer Engineering with a focus on embedded systems, robotics, and video engineering.</p>
+          <p className="me-2 text-center" style={{fontSize: 'calc(15px + 0.5vw)'}}>I'm Sam, a college student studying Electrical and Computer Engineering with a focus on embedded systems, robotics, and video engineering.</p>
         </Stack>
       </Container>
     </>
