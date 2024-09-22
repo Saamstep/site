@@ -14,7 +14,8 @@ function ProjectDisplay() {
       <Row key={rowIndex} className="mb-4">
         {projectData.projects.slice(rowIndex * 3, rowIndex * 3 + 3).map((p, colIndex) => (
           <Col key={colIndex} sm={12} md={4} className="mb-4">
-            <ProjectCard title={p.title} image={p.headerImg} buttonText={p.buttonText} buttonLink={p.buttonLink} tags={p.tags} goLink={p.goLink} goText={p.goText}>
+            <ProjectCard title={p.title} image={p.headerImg} buttonText={p.buttonText} buttonLink={p.buttonLink} tags={p.tags}> 
+            {/* goLink={p.goLink} goText={p.goText} */}
               {p.shortDesc}
             </ProjectCard>
           </Col>
