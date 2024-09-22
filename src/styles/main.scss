@@ -18,6 +18,9 @@ $dark: $bg-dark;
     --bs-primary-rgb: #{to-rgb($sam-blue)};
 }
 
+.text-card {
+    font-weight: lighter;
+}
 
 body {
     font-family: 'Helvetica', sans-serif;
@@ -29,9 +32,14 @@ h1 {
     font-weight: bold;
 }
 
+h3 {
+    font-weight: bold;
+}
+
 .text-emphasis {
     font-family: "Anton", sans-serif;
     font-weight: 400;
     font-style: normal;
     font-size: calc(30px + 2.5vw);
-  }
+}
+

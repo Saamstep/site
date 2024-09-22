@@ -15,12 +15,12 @@ interface Props {
   tags?: string[];
 }
 
-function ProjectCard({ title, children, buttonText, buttonLink, goLink, goText, tags }: Props) {
+function ProjectCard({ title, children, image, buttonText, buttonLink, goLink, goText, tags }: Props) {
   return (
     <Card className="mb-2">
-      <Card.Img variant="top" src="/images/100x50.png" />
+      <Card.Img variant="top" src={image} style={{ height: '150px', objectFit: 'cover' }}/>
       <Card.Body>
-        <Card.Title>{title}</Card.Title>
+        <Card.Title><h3>{title}</h3></Card.Title>
         {tags && (
           <Card.Subtitle className="mb-2">
             {tags.map((t) => {
@@ -34,7 +34,7 @@ function ProjectCard({ title, children, buttonText, buttonLink, goLink, goText, 
             })}
           </Card.Subtitle>
         )}
-        <Card.Text>{children}</Card.Text>
+        <Card.Text className="text-card">{children}</Card.Text>
         {buttonLink && buttonText && (
           <Button variant="primary" href={buttonLink} className="me-3">
             {buttonText}
