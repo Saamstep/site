@@ -6,7 +6,6 @@ $primary: $sam-blue;
 $secondary: $grey;
 $dark: $bg-dark;
 
-
 @import "../../node_modules/bootstrap/scss/bootstrap";
 
 [data-bs-theme="dark"] {
@@ -43,3 +42,6 @@ h3 {
     font-size: calc(30px + 2.5vw);
 }
 
+.app-div {
+    display: inline !important;
+}

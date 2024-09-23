@@ -1,25 +1,30 @@
-import Container from "react-bootstrap/Container";
-import Row from "react-bootstrap/Row";
-import NavBarMenu from "./components/NavBarMenu";
-import ProjectDisplay from "./sections/ProjectsDisplay";
-import Header from "./sections/Header";
-import About from "./sections/About";
+// App.tsx
+import React, { useEffect } from 'react';
+import { Routes, Route } from 'react-router-dom';
+import ExternalRedirect from './components/ExternalLink.tsx';
 
-function App() {
+import Home from './pages/Home.tsx';
+import Error from "./pages/404.tsx";
+import Color from './pages/Color.tsx';
+
+const App: React.FC = () => {
   return (
-    <>
-      <Container fluid>
-        <Row>
-          <NavBarMenu />
-          <Header />
-        </Row>
-      </Container>
-
-      <About />
-
-      <ProjectDisplay />
-    </>
+    <div>
+      <Routes>
+        <Route path="*" element={<Error />} />
+        <Route path="/" element={<Home />} />        
+        <Route path="/qr" element={<Home />} />
+        <Route path="/youtube" element={<ExternalRedirect url="https://youtube.com/@Samstep" />} />
+        <Route path="/twitter" element={<ExternalRedirect url="https://twitter.com/Saamstep" />} />
+        <Route path="/twitch" element={<ExternalRedirect url="https://twitch.tv/Samstep" />} />
+        <Route path="/youtube" element={<ExternalRedirect url="https://youtube.com/@Samstep" />} />
+        <Route path="/color" element={<Color />} />
+        <Route path="/github" element={<ExternalRedirect url="https://github.com/saamstep" />} />
+        <Route path="/subscribe" element={<ExternalRedirect url="https://youtube.com/@Samstep" />} />
+        <Route path="/subscribe" element={<ExternalRedirect url="https://youtube.com/@Samstep" />} />
+      </Routes>
+    </div>
   );
-}
+};
 
 export default App;
