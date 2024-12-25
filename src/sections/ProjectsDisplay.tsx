@@ -9,7 +9,8 @@ import ProjectFilters from '../components/ProjectsFilter'
 function ProjectDisplay() {
   const numRows = Math.ceil(projectData.projects.length / 3);
   const [searchParams] = useSearchParams();
-  const filterArr = searchParams.get("projects") ? searchParams.get("projects")?.split(',') : []; // You can dynamically set this based on your filter criteria
+  const filter = searchParams.get("projects") ? searchParams.get("projects")?.split(',') : []; // You can dynamically set this based on your filter criteria
+  const filterArr: string[] = filter ?? [];
 
   function filterMessage() {
     if(filterArr.length > 0) {

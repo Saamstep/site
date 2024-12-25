@@ -1,15 +1,14 @@
-import { ReactNode } from "react";
 import Button from 'react-bootstrap/Button';
 import { useSearchParams } from "react-router-dom";
 
 function searchParams() {
-    const [searchParams, setSearchParams] = useSearchParams();
+    const [, setSearchParams] = useSearchParams();
 
     const handleButtonClick = () => {
         const params = new URLSearchParams();
         params.delete("projects");
 
-        setSearchParams(params, {
+        setSearchParams(params.toString(), {
             preventScrollReset: true, // Prevents scroll reset, if needed
         });
     };
