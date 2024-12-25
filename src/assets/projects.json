@@ -21,10 +21,22 @@
       "headerImg": "/images/projects/rp120.jpg"
     },
     {
-      "title": "TEST",
+      "title": "VoxArt",
       "shortDesc": "TEST",
-      "tags": ["Control Room", "Operator", "Live Show"],
-      "headerImg": "/images/projects/rp120.jpg"
+      "tags": ["Embedded Systems", "C", "Audio Processing", "STM32"],
+      "headerImg": "/images/100x50.png"
+    },
+    {
+      "title": "The Bridge",
+      "shortDesc": "TEST",
+      "tags": ["Embedded Systems", "C", "Real Time", "STM32"],
+      "headerImg": "/images/100x50.png"
+    },
+    {
+      "title": "LabLink",
+      "shortDesc": "TEST",
+      "tags": ["Embedded Systems", "C", "Real Time", "FreeRTOS", "STM32"],
+      "headerImg": "/images/100x50.png"
     }
   ]
 }

@@ -26,7 +26,7 @@ function ProjectCard({ title, children, image, buttonText, buttonLink, goLink, g
             {tags.map((t) => {
               return (
                 // <a onClick={FilterProjects(t.toLowerCase().replace(/ /g, "_"))}>
-                <Badge bg="secondary" className="me-1">
+                <Badge bg="secondary" className="me-1 my-1">
                   {t}
                 </Badge>
                 // </a>

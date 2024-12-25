@@ -21,7 +21,6 @@ const App: React.FC = () => {
         <Route path="/color" element={<Color />} />
         <Route path="/github" element={<ExternalRedirect url="https://github.com/saamstep" />} />
         <Route path="/subscribe" element={<ExternalRedirect url="https://youtube.com/@Samstep" />} />
-        <Route path="/subscribe" element={<ExternalRedirect url="https://youtube.com/@Samstep" />} />
       </Routes>
     </div>
   );
