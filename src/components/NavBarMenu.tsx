@@ -9,7 +9,8 @@ function NavBarMenu() {
 
   function smoothScroll(anchorName: string) {
     const anchor = document.querySelector(anchorName);
-    if (anchor !== null) anchor.scrollIntoView({ behavior: "smooth", block: "start" });
+    if (anchor !== null)
+      anchor.scrollIntoView({ behavior: "smooth", block: "start" });
   }
 
   return (

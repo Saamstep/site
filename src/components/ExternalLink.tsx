@@ -7,9 +7,9 @@ interface Props {
 function ExternalRedirect({ url }: Props) {
   useEffect(() => {
     window.location.href = url;
-  }, [url]); 
+  }, [url]);
 
-  return null; 
+  return null;
 }
 
 export default ExternalRedirect;

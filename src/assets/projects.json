@@ -19,24 +19,6 @@
       "shortDesc": "I have experience with broadcast signal flows in remote and in-person production environments. I mainly have gathered my experience through esports and HOW shows. I especially enjoy camera operating, lighting and technical directing.",
       "tags": ["Control Room", "Operator", "Live Show"],
       "headerImg": "/images/projects/rp120.jpg"
-    },
-    {
-      "title": "VoxArt",
-      "shortDesc": "TEST",
-      "tags": ["Embedded Systems", "C", "Audio Processing", "STM32"],
-      "headerImg": "/images/100x50.png"
-    },
-    {
-      "title": "The Bridge",
-      "shortDesc": "TEST",
-      "tags": ["Embedded Systems", "C", "Real Time", "STM32"],
-      "headerImg": "/images/100x50.png"
-    },
-    {
-      "title": "LabLink",
-      "shortDesc": "TEST",
-      "tags": ["Embedded Systems", "C", "Real Time", "FreeRTOS", "STM32"],
-      "headerImg": "/images/100x50.png"
     }
   ]
 }
