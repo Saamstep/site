@@ -1,6 +1,28 @@
 {
   "projects": [
     {
+      "title": "Home Lab",
+      "shortDesc": "Due to COVID and a work from home environment for my family, I took the initiative to create a robust, scalable network and home lab. The setup is complete with a NAS, media server, game host server, and advanced home automation controls.",
+      "tags": ["IT", "Networking", "Linux"],
+      "headerImg": "/images/projects/homelab.jpg"
+    },
+    {
+      "title": "LabLink",
+      "shortDesc": "Creating a universal method for lab students to request help from a teaching assistant (TA). Then, provide a simple way for the teaching assistant to manage the queue of users in real time.",
+      "buttonText": "Visit Repository",
+      "buttonLink": "https://github.com/LabLinkSCU/LabLinkSW",
+      "tags": ["Software", "C", "Embedded Systems", "STM32"],
+      "headerImg": ""
+    },
+    {
+      "title": "The Bridge",
+      "shortDesc": "Visualize songs in real time on a beautifully crafted model bridge.",
+      "buttonText": "Visit Repository",
+      "buttonLink": "https://github.com/Saamstep/Bridge/wiki",
+      "tags": ["Software", "C", "Embedded Systems", "STM32"],
+      "headerImg": ""
+    },
+    {
       "title": "ModMail Bot",
       "shortDesc": "I love making utility focused Discord bots that help server administrators and staff do their job efficiently, quickly, and organized. This system has helped me and countless staff members manage support requests with ease all within Discord.",
       "buttonText": "Visit Repository",
@@ -9,10 +31,10 @@
       "headerImg": "/images/projects/modmail.png"
     },
     {
-      "title": "Home Lab",
-      "shortDesc": "Due to COVID and a work from home environment for my family, I took the initiative to create a robust, scalable network and homelab. The setup is complete with a NAS, media server, and game host server.",
-      "tags": ["IT", "Networking", "Linux"],
-      "headerImg": "/images/projects/homelab.jpg"
+      "title": "VoxArt",
+      "shortDesc": "Utilizing hand movements to control digital audio effects. Giving artistic expression into the hands of the vocalist as a conductor is to an orchestra emphasizing vocals with hand movements. With simple, easy to use off the shelf hardware, alter audio effect parameters using a closed loop control system.",
+      "tags": ["Software", "C", "Embedded Systems", "STM32"],
+      "headerImg": ""
     },
     {
       "title": "Broadcast",
@@ -22,3 +44,4 @@
     }
   ]
 }
+ 

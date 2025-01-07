@@ -9,20 +9,14 @@ import ProjectFilters from "../components/ProjectsFilter";
 function ProjectDisplay() {
   const numRows = Math.ceil(projectData.projects.length / 3);
   const [searchParams] = useSearchParams();
-  const filter = searchParams.get("projects")
-    ? searchParams.get("projects")?.split(",")
-    : []; // You can dynamically set this based on your filter criteria
+  const filter = searchParams.get("projects") ? searchParams.get("projects")?.split(",") : []; // You can dynamically set this based on your filter criteria
   const filterArr: string[] = filter ?? [];
 
   function filterMessage() {
     if (filterArr.length > 0) {
       return (
-        <p
-          className="my-2 text-left"
-          style={{ fontSize: "15px", color: "#fcba03" }}
-        >
-          Filtering by Tag{filterArr.length > 1 ? "s" : null}:{" "}
-          <strong>{filterArr?.join(", ")}</strong>
+        <p className="my-2 text-left" style={{ fontSize: "15px", color: "#fcba03" }}>
+          Filtering by Tag{filterArr.length > 1 ? "s" : null}: <strong>{filterArr?.join(", ")}</strong>
         </p>
       );
     } else {
@@ -44,13 +38,7 @@ function ProjectDisplay() {
           .slice(rowIndex * 3, rowIndex * 3 + 3) // Paginate results
           .map((p, colIndex) => (
             <Col key={colIndex} sm={12} md={4} className="mb-4">
-              <ProjectCard
-                title={p.title}
-                image={p.headerImg}
-                buttonText={p.buttonText}
-                buttonLink={p.buttonLink}
-                tags={p.tags}
-              >
+              <ProjectCard title={p.title} image={p.headerImg} buttonText={p.buttonText} buttonLink={p.buttonLink} tags={p.tags}>
                 {p.shortDesc}
               </ProjectCard>
             </Col>

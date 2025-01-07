@@ -4,8 +4,7 @@ import bmdImage from "../assets/bmd.jpg";
 import Stack from "react-bootstrap/Stack";
 
 function Header() {
-  const centerItems =
-    "d-flex align-items-center justify-content-center text-center";
+  const centerItems = "d-flex align-items-center justify-content-center text-center";
 
   // State to manage window width for responsive styles
   const [windowWidth, setWindowWidth] = useState(window.innerWidth);
@@ -70,13 +69,10 @@ function Header() {
           <h1 className="text-emphasis">👋 Hey There!</h1>
           <hr />
           <p className="me-2 text-center" style={textStyle}>
-            I'm Sam, a college student studying{" "}
-            <strong>Electrical and Computer Engineering</strong> focusing on
-            embedded systems.
+            My name is Sam, I am a student studying <strong>Electrical and Computer Engineering</strong> with an emphasis on embedded systems.
           </p>
           <p className="me-2 text-center" style={secondTextStyle}>
-            Exploring the world of video engineering, managing my home lab
-            playing, PC games, and cooking are my past time activities.
+            {/* Exploring the world of video engineering, managing my home lab, playing PC games, and cooking are my past time activities. */}
           </p>
         </Stack>
       </Container>
