@@ -38,7 +38,7 @@ function ProjectDisplay() {
           .slice(rowIndex * 3, rowIndex * 3 + 3) // Paginate results
           .map((p, colIndex) => (
             <Col key={colIndex} sm={12} md={4} className="mb-4">
-              <ProjectCard title={p.title} image={p.headerImg} buttonText={p.buttonText} buttonLink={p.buttonLink} tags={p.tags}>
+              <ProjectCard title={p.title} image={p.headerImg || "https://miro.medium.com/v2/resize:fit:1400/1*KuGlXZjyTw7q38uzY_aZRA.png"} buttonText={p.buttonText} buttonLink={p.buttonLink} tags={p.tags}>
                 {p.shortDesc}
               </ProjectCard>
             </Col>
