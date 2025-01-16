@@ -8,7 +8,11 @@ function useIsInViewport(targetRef: RefObject<HTMLElement>): boolean {
       const element = targetRef.current;
       if (element) {
         const rect = element.getBoundingClientRect();
-        const isVisible = rect.top >= 0 && rect.left >= 0 && rect.bottom <= window.innerHeight && rect.right <= window.innerWidth;
+        const isVisible =
+          rect.top >= 0 &&
+          rect.left >= 0 &&
+          rect.bottom <= window.innerHeight &&
+          rect.right <= window.innerWidth;
         setIsInViewport(isVisible);
       }
     };

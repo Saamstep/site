@@ -8,22 +8,22 @@ import Header from "../sections/Header";
 import About from "../sections/About";
 
 function Home() {
-    return (
+  return (
     <>
-    <div className="app-div" style={{display: "none"}}>
+      <div className="app-div" style={{ display: "none" }}>
         <Container fluid>
-        <Row>
-          <NavBarMenu />
-          <Header />
-        </Row>
-      </Container>
+          <Row>
+            <NavBarMenu />
+            <Header />
+          </Row>
+        </Container>
 
-      <About />
+        <About />
 
-      <ProjectDisplay />
-    </div>
+        <ProjectDisplay />
+      </div>
     </>
-    )
+  );
 }
 
 export default Home;
