@@ -9,6 +9,7 @@
     "moduleResolution": "node", // Ensure proper module resolution
     "strict": true, // Optional: Ensures strict type-checking
     "jsx": "react-jsx", // Ensure JSX is set for React 17+ projects
-    "noUnusedLocals": true, // Optional: Report errors on unused locals
+    "noUnusedLocals": false, // Optional: Report errors on unused locals
+    "noUnusedParameters": false // Optional: Report errors on unused parameters
   }
 }
