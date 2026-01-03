@@ -16,9 +16,9 @@ function Home() {
             <NavBarMenu />
             <Header />
           </Row>
-        </Container> */}
+        </Container>
 
-        {/* <About /> */}
+        <About /> */}
 
         <ProjectDisplay />
       </div>
