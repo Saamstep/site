@@ -11,14 +11,14 @@ function Home() {
   return (
     <>
       <div className="app-div" style={{ display: "none" }}>
-        <Container fluid>
+        {/* <Container fluid>
           <Row>
             <NavBarMenu />
             <Header />
           </Row>
         </Container>
 
-        <About />
+        <About /> */}
 
         <ProjectDisplay />
       </div>
